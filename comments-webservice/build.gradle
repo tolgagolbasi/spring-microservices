@@ -11,7 +11,7 @@ apply plugin: 'maven-publish'
 
 buildscript {
 	project.ext {
-         springBootVersion = '1.5.6.RELEASE'
+         springBootVersion = '2.4.1'
          jarName = 'basic-comments-webservice'
          versionName = '0.0.1'
          gradleDockerVersion = '1.2'
@@ -32,16 +32,16 @@ buildscript {
         classpath "org.springframework.cloud:spring-cloud-contract-gradle-plugin:${project.springCloudContractVesrion}"
     }
 }
-
+compileTestGroovy.enabled = false
 task createWrapper(type: Wrapper) {
-    gradleVersion = '3.5'
+    gradleVersion = '6.7.1'
 }
 
 // Used by the Docker gradle plugin, group refers to the account under which the docker image is created
 group = 'anilallewar'
 mainClassName = 'com.anilallewar.microservices.comments.CommentsApplication'
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
+sourceCompatibility = 15
+targetCompatibility = 15
 
 repositories {
     mavenCentral()
@@ -49,40 +49,37 @@ repositories {
 }
 
 ext {
-	springCloudVersion = 'Dalston.SR3'
+	springCloudVersion = 'Hoxton.SR9'
 }
 
-dependencyManagement {
-  imports {
-    mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
-  }
-}
+archivesBaseName = "${project.jarName}"
+version = "${project.versionName}"
 
 dependencies {
+    implementation platform('org.springframework.cloud:spring-cloud-dependencies:Hoxton.SR9')
     // Basic Spring boot with config client
-    compile('org.springframework.cloud:spring-cloud-starter-config')
-    compile("org.springframework.boot:spring-boot-starter-web")    
-    compile("org.springframework.boot:spring-boot-starter-actuator")
+    implementation('org.springframework.cloud:spring-cloud-starter-config')
+    implementation 'org.springframework.boot:spring-boot-starter-websocket:2.4.1'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator:2.4.1'
     
     // Spring OAuth2 security
-    compile("org.springframework.boot:spring-boot-starter-security")
-    compile("org.springframework.security.oauth:spring-security-oauth2")
-    compile("org.springframework.security:spring-security-jwt")
+    implementation("org.springframework.boot:spring-boot-starter-security:2.4.1")
+    implementation("org.springframework.security.oauth:spring-security-oauth2:2.4.1.RELEASE")
+    implementation("org.springframework.security:spring-security-jwt:1.1.1.RELEASE")
     
     // Eureka client
-    compile('org.springframework.cloud:spring-cloud-starter-eureka')
+    implementation('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
     
     // Consumer driven contracts server
-    testCompile('org.springframework.cloud:spring-cloud-starter-contract-verifier')
+    testImplementation('org.springframework.cloud:spring-cloud-starter-contract-verifier')
 	
 	// Zipkin tracing
-	compile('org.springframework.cloud:spring-cloud-starter-zipkin')
+	implementation('org.springframework.cloud:spring-cloud-starter-zipkin')
+
+    implementation('io.rest-assured:spring-mock-mvc:4.3.3')
 }
 
-jar {
-    baseName = "${project.jarName}"
-    version =  "${project.versionName}"
-}
+
 
 /*
 * This task builds the docker image by copying the output of the "jar" gradle command

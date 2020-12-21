@@ -3,6 +3,7 @@ package com.anilallewar.microservices.comments.contracts;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import io.restassured.module.mockmvc.RestAssuredMockMvc;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.runner.RunWith;
@@ -13,12 +14,11 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.context.WebApplicationContext;
 
 import com.anilallewar.microservices.comments.CommentsApplication;
-import com.jayway.restassured.module.mockmvc.RestAssuredMockMvc;
 
 /**
  * Base class for the generated contract provider tests<br>
  * <br>
- * 
+ *
  * The name of the class if defined by 2 things
  * <ol>
  * <li>Sub-folder under the <b>contractsDir</b> while defaults to
@@ -29,7 +29,7 @@ import com.jayway.restassured.module.mockmvc.RestAssuredMockMvc;
  * contract is defined under the <i>task/comments</i> folder under
  * <b>test/resources/contracts</b>, the base class name is TaskCommentsBase</li>
  * </ol>
- * 
+ *
  * @author anilallewar
  *
  */
@@ -51,7 +51,7 @@ public abstract class TaskCommentsBase {
 
 	/**
 	 * Return the formatted date for validation
-	 * 
+	 *
 	 * @param timeValue
 	 * @return
 	 */

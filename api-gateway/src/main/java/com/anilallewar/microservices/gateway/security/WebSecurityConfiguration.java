@@ -1,6 +1,6 @@
 package com.anilallewar.microservices.gateway.security;
 
-import org.springframework.boot.actuate.autoconfigure.ManagementServerProperties;
+import org.springframework.boot.autoconfigure.security.SecurityProperties;
 import org.springframework.boot.autoconfigure.security.oauth2.client.EnableOAuth2Sso;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -17,7 +17,6 @@ import com.google.common.collect.ImmutableList;
 
 @Configuration
 @EnableWebSecurity
-@Order(ManagementServerProperties.ACCESS_OVERRIDE_ORDER)
 @EnableOAuth2Sso
 public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
