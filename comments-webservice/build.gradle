@@ -48,15 +48,13 @@ repositories {
     jcenter()
 }
 
-ext {
-	springCloudVersion = 'Hoxton.SR9'
-}
+
 
 archivesBaseName = "${project.jarName}"
 version = "${project.versionName}"
 
 dependencies {
-    implementation platform('org.springframework.cloud:spring-cloud-dependencies:Hoxton.SR9')
+    implementation platform('org.springframework.cloud:spring-cloud-dependencies:2020.0.0')
     // Basic Spring boot with config client
     implementation('org.springframework.cloud:spring-cloud-starter-config')
     implementation 'org.springframework.boot:spring-boot-starter-websocket:2.4.1'
@@ -74,9 +72,12 @@ dependencies {
     testImplementation('org.springframework.cloud:spring-cloud-starter-contract-verifier')
 	
 	// Zipkin tracing
-	implementation('org.springframework.cloud:spring-cloud-starter-zipkin')
+	implementation('org.springframework.cloud:spring-cloud-starter-zipkin:2.2.6.RELEASE')
 
     implementation('io.rest-assured:spring-mock-mvc:4.3.3')
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
 }
 
 

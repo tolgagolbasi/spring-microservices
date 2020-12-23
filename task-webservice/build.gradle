@@ -41,27 +41,25 @@ repositories {
     jcenter()
 }
 
-ext {
-	springCloudVersion = 'Hoxton.SR9'
-}
+
 
 archivesBaseName = "${project.jarName}"
 version = "${project.versionName}"
 
 
 dependencies {
-    implementation platform('org.springframework.cloud:spring-cloud-dependencies:Hoxton.SR9')
+    implementation platform('org.springframework.cloud:spring-cloud-dependencies:2020.0.0')
     // Basic Spring boot with config client
     implementation('org.springframework.cloud:spring-cloud-starter-config')
     implementation 'org.springframework.boot:spring-boot-starter-websocket:2.4.1'
     implementation 'org.springframework.boot:spring-boot-starter-actuator:2.4.1'
-    implementation("org.springframework.cloud:spring-cloud-starter-netflix-hystrix")
+    implementation("org.springframework.cloud:spring-cloud-starter-netflix-hystrix:2.2.6.RELEASE")
     
     // Spring OAuth2 security
     implementation("org.springframework.boot:spring-boot-starter-security:2.4.1")
     implementation("org.springframework.security.oauth:spring-security-oauth2:2.4.1.RELEASE")
     implementation("org.springframework.security:spring-security-jwt:1.1.1.RELEASE")
-	implementation('org.springframework.cloud:spring-cloud-security')
+	implementation('org.springframework.cloud:spring-cloud-security:2.2.4.RELEASE')
     
     // Eureka client
     implementation('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
@@ -72,7 +70,7 @@ dependencies {
 	testImplementation("org.springframework.cloud:spring-cloud-starter-contract-stub-runner")
 	
 	// Zipkin tracing
-	implementation('org.springframework.cloud:spring-cloud-starter-zipkin')
+	implementation('org.springframework.cloud:spring-cloud-starter-zipkin:2.2.6.RELEASE')
 	
 	// Swagger for API testing
 	implementation("io.springfox:springfox-swagger2:${swagger2version}")

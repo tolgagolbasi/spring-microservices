@@ -4,12 +4,13 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import io.restassured.module.mockmvc.RestAssuredMockMvc;
-import org.junit.Before;
-import org.junit.Ignore;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.context.WebApplicationContext;
 
@@ -33,8 +34,8 @@ import com.anilallewar.microservices.comments.CommentsApplication;
  * @author anilallewar
  *
  */
-@Ignore
-@RunWith(SpringRunner.class)
+@Disabled
+@ExtendWith(SpringExtension.class)
 @SpringBootTest(classes = { CommentsApplication.class }, webEnvironment = WebEnvironment.MOCK, properties = {
 		"spring.cloud.discovery.enabled=false", "spring.cloud.config.enabled=false" })
 public abstract class TaskCommentsBase {
@@ -42,7 +43,7 @@ public abstract class TaskCommentsBase {
 	@Autowired
 	private WebApplicationContext context;
 
-	@Before
+	@BeforeAll
 	public void setUp() throws Exception {
 		RestAssuredMockMvc.webAppContextSetup(context);
 	}

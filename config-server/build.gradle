@@ -40,15 +40,13 @@ repositories {
     jcenter()
 }
 
-ext {
-	springCloudVersion = 'Hoxton.SR9'
-}
+
 
 archivesBaseName = "${project.jarName}"
 version = "${project.versionName}"
 
 dependencies {
-    implementation platform('org.springframework.cloud:spring-cloud-dependencies:Hoxton.SR9')
+    implementation platform('org.springframework.cloud:spring-cloud-dependencies:2020.0.0')
     implementation("org.springframework.cloud:spring-cloud-config-server")
 }
 

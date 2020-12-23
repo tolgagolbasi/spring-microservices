@@ -49,14 +49,12 @@ repositories {
     jcenter()
 }
 
-ext {
-	springCloudVersion = 'Hoxton.SR9'
-}
+
 
 
 
 dependencies {
-    implementation platform('org.springframework.cloud:spring-cloud-dependencies:Hoxton.SR9')
+    implementation platform('org.springframework.cloud:spring-cloud-dependencies:2020.0.0')
     // Basic Spring boot with config client
     implementation('org.springframework.cloud:spring-cloud-starter-config')
     implementation 'org.springframework.boot:spring-boot-starter-websocket:2.4.1'
@@ -70,9 +68,9 @@ dependencies {
     implementation('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
     
     // Hsytrix dashboard
-    implementation('org.springframework.cloud:spring-cloud-starter-netflix-hystrix')
-    implementation('org.springframework.cloud:spring-cloud-starter-netflix-hystrix-dashboard')
-    implementation('org.springframework.cloud:spring-cloud-starter-netflix-turbine')
+    implementation('org.springframework.cloud:spring-cloud-starter-netflix-hystrix:2.2.6.RELEASE')
+    implementation('org.springframework.cloud:spring-cloud-starter-netflix-hystrix-dashboard:2.2.6.RELEASE')
+    implementation('org.springframework.cloud:spring-cloud-starter-netflix-turbine:2.2.6.RELEASE')
 }
 
 archivesBaseName = "${project.jarName}"

@@ -2,7 +2,7 @@ version: '2'
 services:
   mysqldb:
     image: mysql:latest
-    mem_limit: 1073741824
+    mem_limit: "1073741824"
     restart: unless-stopped
     ports:
       - "3306/tcp"
@@ -15,7 +15,7 @@ services:
 
   configserver:
     image: anilallewar/basic-config-server:0.0.1
-    mem_limit: 1073741824
+    mem_limit: "1073741824"
     restart: unless-stopped
     ports:
       - "8888/tcp"
@@ -30,7 +30,7 @@ services:
 
   eurekaregistry:
     image: anilallewar/basic-webservice-registry:0.0.1
-    mem_limit: 1073741824
+    mem_limit: "1073741824"
     restart: unless-stopped
     ports:
       - "8761:8761/tcp"
@@ -45,7 +45,7 @@ services:
 
   authserver:
     image: anilallewar/basic-auth-server:0.0.1
-    mem_limit: 1073741824
+    mem_limit: "1073741824"
     restart: unless-stopped
     ports:
       - "8899/tcp"
@@ -60,7 +60,7 @@ services:
 
   apigateway:
     image: anilallewar/basic-api-gateway:0.0.1
-    mem_limit: 1073741824
+    mem_limit: "1073741824"
     restart: unless-stopped
     ports:
       - "8765:8765/tcp"
@@ -75,7 +75,7 @@ services:
 
   webportal:
     image: anilallewar/basic-web-portal:0.0.1
-    mem_limit: 1073741824
+    mem_limit: "1073741824"
     restart: unless-stopped
     ports:
       - "8080/tcp"
@@ -90,7 +90,7 @@ services:
 
   userwebservice:
     image: anilallewar/basic-user-webservice:0.0.1
-    mem_limit: 1073741824
+    mem_limit: "1073741824"
     restart: unless-stopped
     ports:
       - "8080/tcp"
@@ -105,7 +105,7 @@ services:
 
   taskwebservice:
     image: anilallewar/basic-task-webservice:0.0.1
-    mem_limit: 1073741824
+    mem_limit: "1073741824"
     restart: unless-stopped
     ports:
       - "8080/tcp"
@@ -120,7 +120,7 @@ services:
 
   commentswebservice:
     image: anilallewar/basic-comments-webservice:0.0.1
-    mem_limit: 1073741824
+    mem_limit: "1073741824"
     restart: unless-stopped
     ports:
       - "8080/tcp"
@@ -135,7 +135,7 @@ services:
 
   zipkinserver:
     image: anilallewar/basic-zipkin-server:0.0.1
-    mem_limit: 1073741824
+    mem_limit: "1073741824"
     restart: unless-stopped
     ports:
       - "9411:9411/tcp"
