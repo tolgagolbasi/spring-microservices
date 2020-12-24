@@ -33,6 +33,7 @@ services:
       - zoo1
   mysqldb:
     image: mysql:latest
+    hostname: mysqldb
     mem_limit: "1073741824"
     restart: unless-stopped
     healthcheck:
@@ -48,6 +49,7 @@ services:
   # The zipkin process services the UI, and also exposes a POST endpoint that
   # instrumentation can send trace data to.
   zipkin:
+    hostname: zipkin
     image: ghcr.io/openzipkin/zipkin-slim:${TAG:-latest}
     container_name: zipkin
     # Environment settings are defined here https://github.com/openzipkin/zipkin/blob/master/zipkin-server/README.md#environment-variables
@@ -67,6 +69,7 @@ services:
 
   configserver:
     image: anilallewar/basic-config-server:0.0.1
+    hostname: configserver
     mem_limit: "1073741824"
     restart: unless-stopped
     healthcheck:
@@ -82,6 +85,7 @@ services:
 
   eurekaregistry:
     image: anilallewar/basic-webservice-registry:0.0.1
+    hostname: eurekaregistry
     mem_limit: "1073741824"
     restart: unless-stopped
     healthcheck:
@@ -97,6 +101,7 @@ services:
 
   authserver:
     image: anilallewar/basic-auth-server:0.0.1
+    hostname: authserver
     mem_limit: "1073741824"
     restart: unless-stopped
     ports:
@@ -107,6 +112,7 @@ services:
 
   apigateway:
     image: anilallewar/basic-api-gateway:0.0.1
+    hostname: apigateway
     mem_limit: "1073741824"
     restart: unless-stopped
     ports:
@@ -117,6 +123,7 @@ services:
 
   webportal:
     image: anilallewar/basic-web-portal:0.0.1
+    hostname: webportal
     mem_limit: "1073741824"
     restart: unless-stopped
     ports:
@@ -127,6 +134,7 @@ services:
 
   userwebservice:
     image: anilallewar/basic-user-webservice:0.0.1
+    hostname: userwebservice
     mem_limit: "1073741824"
     restart: unless-stopped
     ports:
@@ -137,6 +145,7 @@ services:
 
   taskwebservice:
     image: anilallewar/basic-task-webservice:0.0.1
+    hostname: taskwebservice
     mem_limit: "1073741824"
     restart: unless-stopped
     ports:
@@ -147,6 +156,7 @@ services:
 
   commentswebservice:
     image: anilallewar/basic-comments-webservice:0.0.1
+    hostname: commentswebservice
     mem_limit: "1073741824"
     restart: unless-stopped
     ports:

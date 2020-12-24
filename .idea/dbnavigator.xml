@@ -23,11 +23,7 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes>
-      <connection connection-id="74f21709-aef3-4dbf-8299-e7a18a48659c">
-        <schema name="auth" object-types="column, constraint, view, function, index, table, dataset trigger, procedure" />
-      </connection>
-    </loaded-nodes>
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="74f21709-aef3-4dbf-8299-e7a18a48659c">
@@ -84,7 +80,7 @@
           <driver-library value="" />
           <driver value="" />
           <url-type value="DATABASE" />
-          <host value="172.18.0.2" />
+          <host value="172.19.0.4" />
           <port value="3306" />
           <database value="auth" />
           <type value="USER_PASSWORD" />
@@ -92,7 +88,7 @@
           <deprecated-pwd value="cGFzc3dvcmQ=" />
         </database>
         <properties>
-          <auto-commit value="false" />
+          <auto-commit value="true" />
         </properties>
         <ssh-settings>
           <active value="false" />

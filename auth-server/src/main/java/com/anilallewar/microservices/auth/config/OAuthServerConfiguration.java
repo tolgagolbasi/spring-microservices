@@ -117,8 +117,8 @@ public class OAuthServerConfiguration extends AuthorizationServerConfigurerAdapt
 		@Override
 		public void init(AuthenticationManagerBuilder auth) throws Exception {
 			// @formatter:off
-			auth.jdbcAuthentication().dataSource(dataSource).withUser("dave").password("secret").roles("USER").and()
-					.withUser("anil").password("password").roles("ADMIN", "USER").and().getUserDetailsService();
+//			auth.jdbcAuthentication().dataSource(dataSource).withUser("dave").password("secret").roles("USER").and()
+//					.withUser("anil").password("password").roles("ADMIN", "USER").and().getUserDetailsService();
 			// @formatter:on
 
 			// Add the default service

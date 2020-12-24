@@ -3,7 +3,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/anilallewar/microservices-basics-cloud-config
+          uri: https://github.com/tolgagolbasi/cloud-config
 #         username: <>
 #         password: <>
 
