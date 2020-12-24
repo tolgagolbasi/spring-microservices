@@ -78,7 +78,7 @@
           <url-type value="DATABASE" />
           <host value="localhost" />
           <port value="3306" />
-          <database value="mysql" />
+          <database value="auth" />
           <type value="USER_PASSWORD" />
           <user value="root" />
           <deprecated-pwd value="cGFzc3dvcmQ=" />
