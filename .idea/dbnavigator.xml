@@ -16,14 +16,18 @@
       <scope value="GLOBAL" />
       <destination value="FILE" />
       <format value="EXCEL" />
-      <charset value="windows-1252" />
+      <charset value="UTF-8" />
     </export-instructions>
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes />
+    <loaded-nodes>
+      <connection connection-id="74f21709-aef3-4dbf-8299-e7a18a48659c">
+        <schema name="auth" object-types="column, constraint, view, function, index, table, dataset trigger, procedure" />
+      </connection>
+    </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="74f21709-aef3-4dbf-8299-e7a18a48659c">
@@ -36,6 +40,10 @@
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="74f21709-aef3-4dbf-8299-e7a18a48659c" />
   </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="74f21709-aef3-4dbf-8299-e7a18a48659c" dataset="auth.users" active-filter-id="" />
+    <filter-actions connection-id="74f21709-aef3-4dbf-8299-e7a18a48659c" dataset="auth.authorities" active-filter-id="" />
+  </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
   </component>
@@ -43,7 +51,7 @@
     <retain-sticky-names value="false" />
   </component>
   <component name="DBNavigator.Project.FileConnectionMappingManager">
-    <mapping file-url="file://$PROJECT_DIR$/auth-server/src/main/resources/schema.sql" connection-id="74f21709-aef3-4dbf-8299-e7a18a48659c" session-id="MAIN" current-schema="" />
+    <mapping file-url="file://$PROJECT_DIR$/auth-server/src/main/resources/schema.sql" connection-id="74f21709-aef3-4dbf-8299-e7a18a48659c" session-id="MAIN" current-schema="auth" />
   </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
     <method-browser />
@@ -71,12 +79,12 @@
           <description value="" />
           <database-type value="MYSQL" />
           <config-type value="BASIC" />
-          <database-version value="9999.0" />
+          <database-version value="8.0" />
           <driver-source value="BUILTIN" />
           <driver-library value="" />
           <driver value="" />
           <url-type value="DATABASE" />
-          <host value="localhost" />
+          <host value="172.18.0.2" />
           <port value="3306" />
           <database value="auth" />
           <type value="USER_PASSWORD" />
@@ -283,6 +291,7 @@
           <content-type name="JSON" enabled="true" />
           <content-type name="JSON5" enabled="true" />
           <content-type name="Groovy" enabled="true" />
+          <content-type name="AIDL" enabled="true" />
           <content-type name="YAML" enabled="true" />
           <content-type name="Manifest" enabled="true" />
         </content-types>

@@ -74,8 +74,8 @@ dependencies {
 	implementation('org.springframework.cloud:spring-cloud-starter-zipkin:2.2.6.RELEASE')
 	
 	  	// Swagger for API testing
-	implementation("io.springfox:springfox-swagger2:${swagger2version}")
-	implementation("io.springfox:springfox-swagger-ui:${swagger2version}")
+	implementation("io.springfox:springfox-swagger2:3.0.0")
+	implementation("io.springfox:springfox-swagger-ui:3.0.0")
 }
 
 archivesBaseName = "${project.jarName}"

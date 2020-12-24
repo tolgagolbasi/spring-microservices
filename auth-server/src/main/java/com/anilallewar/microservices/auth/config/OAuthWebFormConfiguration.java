@@ -1,6 +1,7 @@
 package com.anilallewar.microservices.auth.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -25,8 +26,11 @@ public class OAuthWebFormConfiguration extends WebMvcConfigurerAdapter {
 	@Order(-20)
 	protected static class LoginConfig extends WebSecurityConfigurerAdapter {
 
-		@Autowired
-		private AuthenticationManager authenticationManager;
+		@Override
+		@Bean
+		public AuthenticationManager authenticationManagerBean() throws Exception {
+			return super.authenticationManagerBean();
+		}
 
 		@Override
 		protected void configure(HttpSecurity http) throws Exception {
@@ -50,7 +54,7 @@ public class OAuthWebFormConfiguration extends WebMvcConfigurerAdapter {
 
 		@Override
 		protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-			auth.parentAuthenticationManager(authenticationManager);
+			auth.parentAuthenticationManager(super.authenticationManagerBean());
 		}
 		
 		// Swagger specific, allow access

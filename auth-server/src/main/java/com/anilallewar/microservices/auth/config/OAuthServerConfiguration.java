@@ -54,7 +54,7 @@ public class OAuthServerConfiguration extends AuthorizationServerConfigurerAdapt
 	
 	private static final String AUTHORIZATION_HEADER = "AUTHORIZATION";
 	private static final String OAUTH2_CLIENT_SCOPE = "openid";
-	
+
 	@Autowired
 	private AuthenticationManager authenticationManager;
 
