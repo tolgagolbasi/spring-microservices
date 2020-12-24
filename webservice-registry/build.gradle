@@ -51,6 +51,8 @@ dependencies {
 	implementation('org.springframework.boot:spring-boot-starter-actuator:2.4.1')
     implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-server:2.2.6.RELEASE")
     implementation("com.google.code.gson:gson:2.8.6")
+    implementation 'org.springframework.cloud:spring-cloud-starter-sleuth:2.2.6.RELEASE'
+
 }
 
 

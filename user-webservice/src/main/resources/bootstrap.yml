@@ -6,7 +6,7 @@ spring:
     config:
 # Define the URL from where this service would pick up it's external configuration. Note that it is
 # pointing to the config-server aplication      
-      uri: http://configserver:8888
+      uri: http://localhost:8888
 
 ---
 
@@ -14,4 +14,4 @@ spring:
   profiles: docker
   cloud:
      config:
-        uri: http://configserver:8888
+        uri: http://localhost:8888

@@ -70,6 +70,9 @@ dependencies {
 //	// Swagger for API testing
 	implementation("io.springfox:springfox-swagger2:3.0.0")
 	implementation("io.springfox:springfox-swagger-ui:3.0.0")
+
+    implementation 'org.springframework.cloud:spring-cloud-starter-sleuth:2.2.6.RELEASE'
+
 }
 
 

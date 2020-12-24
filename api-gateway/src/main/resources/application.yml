@@ -5,5 +5,5 @@ logging:
          security: DEBUG
 eureka:
   client:
-    serviceUrl:
-      defaultZone: http://eurekaregistry:8761/eureka/
+    serviceeurUrl:
+      defaultZone: http://localhost:8761/eureka/

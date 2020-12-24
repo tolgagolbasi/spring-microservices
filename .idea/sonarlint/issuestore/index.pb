@@ -1,6 +1,6 @@
 
 9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 E
 build-all-projects.sh,f\d\fd3d87b86a73fefb50d5d595cddff32f960d263b
 7
@@ -14,13 +14,13 @@ f
 J
 zipkin-server/build.gradle,0\0\0014b8ba04f366f079054118830faa86f4395a24
 J
-config-server/build.gradle,9\e\9e9343d55cfc75598e543414688c2fc07bb5b139
+config-server/build.gradle,9/e/9e9343d55cfc75598e543414688c2fc07bb5b139
 L
-user-webservice/build.gradle,5\3\53c181c798b7beab122905ef346da838aa7ad655
+user-webservice/build.gradle,5/3/53c181c798b7beab122905ef346da838aa7ad655
 ë
 awebservice-registry/src/main/java/com/anilallewar/microservices/registry/RegistryApplication.java,1\e\1e35505060bd47425e5f4386dee4b4f9cd013bd0
 P
- webservice-registry/build.gradle,c\c\cc70a6643583911bc775166cda0b9bbbec87dba6
+ webservice-registry/build.gradle,c/c/cc70a6643583911bc775166cda0b9bbbec87dba6
 á
 Wauth-server/src/main/java/com/anilallewar/microservices/auth/AuthServerApplication.java,c/d/cda7aed7e581d4688072605d45b1f4c684b6df35
 H
@@ -28,15 +28,15 @@ H
 E
 auth-server/README.md,4/a/4a74e668dd00b63553eab293bea85559fa1b712a
 H
-api-gateway/build.gradle,6\8\68a416ff071be67c370ccc417719b65106ae9180
+api-gateway/build.gradle,6/8/68a416ff071be67c370ccc417719b65106ae9180
 P
- comments-webservice/build.gradle,9\5\955a7094f62b2cada5af6ca1d96cbdae2cf85178
+ comments-webservice/build.gradle,9/5/955a7094f62b2cada5af6ca1d96cbdae2cf85178
 ò
 hcomments-webservice/src/test/java/com/anilallewar/microservices/comments/contracts/TaskCommentsBase.java,f\f\ff48e27f753cd30a7b21ec0a6d27dd856c5d7587
 L
-task-webservice/build.gradle,8\0\807d084bc6117ca29ee194699f8c9867b5d182f3
+task-webservice/build.gradle,8/0/807d084bc6117ca29ee194699f8c9867b5d182f3
 G
-web-portal/build.gradle,b\2\b25692f5181b9c3c9caab954d11afc071488969c
+web-portal/build.gradle,b/2/b25692f5181b9c3c9caab954d11afc071488969c
 è
 _zipkin-server/src/main/java/com/anilallewar/microservices/tracing/ZipkinTracingApplication.java,b\1\b1750d47129435b29d1782fa243492f13a0ff40e
 `
@@ -64,14 +64,14 @@ Uuser-webservice/src/main/java/com/anilallewar/microservices/user/UserApplicatio
 ê
 `auth-server/src/main/java/com/anilallewar/microservices/auth/service/JdbcUserDetailsService.java,d\c\dc5cb3d4b095e6ce9a0a50ccc6e7b7e7db5aaffe
 M
-webservice-registry/README.md,8\4\84adecd13322f11509a22aa93bc45bff31b7b96f
+webservice-registry/README.md,8/4/84adecd13322f11509a22aa93bc45bff31b7b96f
 à
 Xauth-server/src/main/java/com/anilallewar/microservices/auth/api/AuthUserController.java,f\4\f4dc2df75707c6756d7aa20d259e3ee8ed6893fd
 :
 
-.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
 á
-Wapi-gateway/src/main/java/com/anilallewar/microservices/gateway/GatewayApplication.java,8\d\8db58cb890547a3b9260608dc1d635019360d850
+Wapi-gateway/src/main/java/com/anilallewar/microservices/gateway/GatewayApplication.java,8/d/8db58cb890547a3b9260608dc1d635019360d850
 V
 &api-gateway/src/main/docker/Dockerfile,f/0/f00ec567e8a49664ae6418ec43eac58474f8e720
 V
@@ -106,3 +106,31 @@ _
 /docker-orchestration/rancher/docker-compose.yml,d/f/dfb016eb2e423d3d5953426989a625c6f7879ab5
 í
 bauth-server/src/main/java/com/anilallewar/microservices/auth/config/OAuthWebFormConfiguration.java,8/d/8d0124d55397dd4f0f1dac56f32f4c6ee137cbac
+¨
+|docker-orchestration/docker-compose/zk-single-kafka-single/kafka1/data/__confluent.support.metrics-0/leader-epoch-checkpoint,5/5/558c64b61b9274475d8842a61ef5859bdc5b1101
+í
+bdocker-orchestration/docker-compose/zk-single-kafka-single/kafka1/data/log-start-offset-checkpoint,6/a/6afdf541b839e4f9bed52a3e2759d766cec77817
+Ü
+Vdocker-orchestration/docker-compose/zk-single-kafka-single/kafka1/data/meta.properties,b/a/bafd8ef7c111fab476029eaa270465924e9ace29
+y
+Idocker-orchestration/docker-compose/zk-single-kafka-single/zoo1/data/myid,9/6/96ca6209ba86d002966c3171bc79a8d8cefaa122
+ó
+gdocker-orchestration/docker-compose/zk-single-kafka-single/kafka1/data/recovery-point-offset-checkpoint,3/0/306c0850b2c5f1707a6d3ba02905a2376c5ee5c6
+î
+ddocker-orchestration/docker-compose/zk-single-kafka-single/kafka1/data/replication-offset-checkpoint,f/2/f240c24405ad8056f947a4c415043eeb7499d534
+I
+user-webservice/README.md,f/f/ffe80bddd14f6de08a92cb82e5de90a90ba8e1a9
+Ñ
+Tweb-portal/src/main/java/com/anilallewar/microservices/portal/PortalApplication.java,6/1/61bf17c40ec7d074162bd3d235f0a0264c261627
+D
+web-portal/README.md,d/9/d9f997bd37d022ba3c16cfc7131a4efc6c78ffe7
+ñ
+fapi-gateway/src/main/java/com/anilallewar/microservices/gateway/security/WebSecurityConfiguration.java,8/4/840258c6808006e9e4f7e8de9611fa7eac15f04e
+•
+uapi-gateway/src/main/java/com/anilallewar/microservices/gateway/config/swagger/SwaggerDocumentationConfiguration.java,5/4/5488f9c530ad2fb23c6245dc768146d23704eacd
+å
+\api-gateway/src/main/java/com/anilallewar/microservices/gateway/config/bean/BeanFactory.java,9/0/9013d20712fe31f0a9486cde66d0fb0b6bc9c502
+E
+api-gateway/README.md,8/7/875083f4ade320faab2c0422d4a49320725dc167
+á
+Wdocker-orchestration/k8s/manifests/helm-charts/application/support-services/values.yaml,b/4/b46327e39287352f47818605a783a5e54867d15a

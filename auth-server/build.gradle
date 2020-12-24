@@ -74,6 +74,9 @@ dependencies {
 
     // https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api
     compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.1'
+    implementation 'org.springframework.cloud:spring-cloud-starter-sleuth:2.2.6.RELEASE'
+    // Zipkin tracing
+    implementation('org.springframework.cloud:spring-cloud-starter-zipkin:2.2.6.RELEASE')
 
 }
 

@@ -3,7 +3,7 @@ spring:
     name: web-portal
   cloud:
     config:
-      uri: http://configserver:8888
+      uri: http://localhost:8888
       
 ---
 
@@ -11,4 +11,4 @@ spring:
   profiles: docker
   cloud:
      config:
-        uri: http://configserver:8888
+        uri: http://localhost:8888
