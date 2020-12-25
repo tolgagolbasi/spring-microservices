@@ -3,7 +3,3 @@ logging:
      org:
        springframework:
          security: DEBUG
-eureka:
-  client:
-    serviceeurUrl:
-      defaultZone: http://localhost:8761/eureka/

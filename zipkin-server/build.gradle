@@ -52,7 +52,7 @@ dependencies {
     implementation platform('org.springframework.cloud:spring-cloud-dependencies:2020.0.0')
     // Basic Spring boot with config client
     implementation('org.springframework.cloud:spring-cloud-starter-config:2.2.6.RELEASE')
-    implementation 'org.springframework.boot:spring-boot-starter-websocket:2.4.1'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.4.1'
     implementation 'org.springframework.boot:spring-boot-starter-actuator:2.4.1'
     
 	// Zipkin tracing

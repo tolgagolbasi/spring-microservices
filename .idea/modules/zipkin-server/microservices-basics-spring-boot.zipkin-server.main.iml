@@ -1,8 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module version="4">
-  <component name="CheckStyle-IDEA-Module">
-    <option name="configuration">
-      <map />
-    </option>
+<module external.system.module.type="sourceSet" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../zipkin-server/build/classes/java/main" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../zipkin-server/src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../../zipkin-server/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../zipkin-server/src/main/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Gradle: org.springframework.cloud:spring-cloud-starter-config:2.2.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-websocket:2.4.1" level="project" />
+    <orderEntry type="library" name="Gradle: io.zipkin:zipkin-server:2.23.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-actuator:2.4.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.cloud:spring-cloud-starter-zipkin:2.2.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.cloud:spring-cloud-starter:2.2.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.cloud:spring-cloud-config-client:2.2.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.12.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-web:2.4.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-messaging:5.3.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-websocket:5.3.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.netflix.concurrency-limits:concurrency-limits-core:0.3.6" level="project" />
+    <orderEntry type="library" name="Gradle: io.zipkin.zipkin2:zipkin-collector:2.23.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.linecorp.armeria:armeria-brave:1.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: io.zipkin.zipkin2:zipkin:2.23.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter:2.4.1" level="project" />
+    <orderEntry type="library" name="Gradle: io.micrometer:micrometer-registry-prometheus:1.6.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.linecorp.armeria:armeria-spring-boot2-autoconfigure:1.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.linecorp.armeria:armeria-grpc-protocol:1.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: io.micrometer:micrometer-core:1.6.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-log4j2:2.4.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:jul-to-slf4j:1.7.30" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.30" level="project" />
+    <orderEntry type="library" name="Gradle: io.zipkin:zipkin-lens:2.23.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-actuator-autoconfigure:2.4.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.cloud:spring-cloud-starter-sleuth:2.2.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.cloud:spring-cloud-sleuth-zipkin:2.2.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.security:spring-security-rsa:1.0.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.cloud:spring-cloud-commons:2.2.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.cloud:spring-cloud-context:2.2.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.12.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-web:5.3.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-autoconfigure:2.4.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpclient:4.5.12" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.12.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-json:2.4.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-tomcat:2.4.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-webmvc:5.3.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-beans:5.3.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-core:5.3.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-context:5.3.2" level="project" />
+    <orderEntry type="library" name="Gradle: io.zipkin.brave:brave-instrumentation-http:5.13.1" level="project" />
+    <orderEntry type="library" name="Gradle: io.zipkin.brave:brave:5.13.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.linecorp.armeria:armeria:1.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-logging:2.4.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot:2.4.1" level="project" />
+    <orderEntry type="library" name="Gradle: jakarta.annotation:jakarta.annotation-api:1.3.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.yaml:snakeyaml:1.27" level="project" />
+    <orderEntry type="library" name="Gradle: io.prometheus:simpleclient_common:0.9.0" level="project" />
+    <orderEntry type="library" name="Gradle: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="library" name="Gradle: org.hdrhistogram:HdrHistogram:2.1.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-slf4j-impl:2.13.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-core:2.13.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-jul:2.13.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-actuator:2.4.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.cloud:spring-cloud-sleuth-core:2.2.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-aop:2.3.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: io.zipkin.reporter2:zipkin-sender-kafka:2.15.2" level="project" />
+    <orderEntry type="library" name="Gradle: io.zipkin.reporter2:zipkin-sender-activemq-client:2.15.2" level="project" />
+    <orderEntry type="library" name="Gradle: io.zipkin.reporter2:zipkin-sender-amqp-client:2.15.2" level="project" />
+    <orderEntry type="library" name="Gradle: io.zipkin.reporter2:zipkin-reporter-brave:2.16.0" level="project" />
+    <orderEntry type="library" name="Gradle: io.zipkin.reporter2:zipkin-reporter:2.16.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.bouncycastle:bcpkix-jdk15on:1.64" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.security:spring-security-crypto:5.3.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpcore:4.4.13" level="project" />
+    <orderEntry type="library" name="Gradle: commons-codec:commons-codec:1.11" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.12.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.12.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.module:jackson-module-parameter-names:2.12.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.tomcat.embed:tomcat-embed-websocket:9.0.41" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:9.0.41" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish:jakarta.el:3.0.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-aop:5.3.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-expression:5.3.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-jcl:5.3.2" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-codec-http2:4.1.54.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-codec-haproxy:4.1.54.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-resolver-dns:4.1.54.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-transport:4.1.54.Final" level="project" />
+    <orderEntry type="library" name="Gradle: org.reactivestreams:reactive-streams:1.0.3" level="project" />
+    <orderEntry type="library" name="Gradle: ch.qos.logback:logback-classic:1.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-to-slf4j:2.13.3" level="project" />
+    <orderEntry type="library" name="Gradle: io.prometheus:simpleclient:0.9.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-api:2.13.3" level="project" />
+    <orderEntry type="library" name="Gradle: io.zipkin.reporter2:zipkin-reporter-metrics-micrometer:2.15.2" level="project" />
+    <orderEntry type="library" name="Gradle: io.zipkin.brave:brave-instrumentation-spring-web:5.12.7" level="project" />
+    <orderEntry type="library" name="Gradle: io.zipkin.brave:brave-instrumentation-httpclient:5.12.7" level="project" />
+    <orderEntry type="library" name="Gradle: io.zipkin.brave:brave-instrumentation-httpasyncclient:5.12.7" level="project" />
+    <orderEntry type="library" name="Gradle: io.zipkin.brave:brave-instrumentation-spring-webmvc:5.12.7" level="project" />
+    <orderEntry type="library" name="Gradle: io.zipkin.brave:brave-context-slf4j:5.12.7" level="project" />
+    <orderEntry type="library" name="Gradle: io.zipkin.brave:brave-instrumentation-spring-rabbit:5.12.7" level="project" />
+    <orderEntry type="library" name="Gradle: io.zipkin.brave:brave-instrumentation-kafka-streams:5.12.7" level="project" />
+    <orderEntry type="library" name="Gradle: io.zipkin.brave:brave-instrumentation-kafka-clients:5.12.7" level="project" />
+    <orderEntry type="library" name="Gradle: io.zipkin.brave:brave-instrumentation-jms:5.12.7" level="project" />
+    <orderEntry type="library" name="Gradle: io.zipkin.brave:brave-instrumentation-messaging:5.12.7" level="project" />
+    <orderEntry type="library" name="Gradle: io.zipkin.brave:brave-instrumentation-rpc:5.12.7" level="project" />
+    <orderEntry type="library" name="Gradle: org.aspectj:aspectjrt:1.9.6" level="project" />
+    <orderEntry type="library" name="Gradle: org.aspectj:aspectjweaver:1.9.6" level="project" />
+    <orderEntry type="library" name="Gradle: org.bouncycastle:bcprov-jdk15on:1.64" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-codec-http:4.1.54.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-handler:4.1.54.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-codec:4.1.54.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-buffer:4.1.54.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-common:4.1.54.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-codec-dns:4.1.54.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-resolver:4.1.54.Final" level="project" />
+    <orderEntry type="library" name="Gradle: ch.qos.logback:logback-core:1.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: io.zipkin.brave:brave-instrumentation-servlet:5.12.7" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.zipkin.java:zipkin-autoconfigure-ui:2.12.9" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: javax.servlet:javax.servlet-api:4.0.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.zipkin.java:zipkin-ui:2.12.9" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.zipkin.zipkin2:zipkin-lens:2.12.9" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jsoup:jsoup:1.11.3" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.code.findbugs:jsr305:3.0.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.linecorp.armeria:armeria-logback:1.3.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.latencyutils:LatencyUtils:2.0.3" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-transport-native-epoll:linux-x86_64:4.1.54.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty.incubator:netty-incubator-transport-native-io_uring:linux-x86_64:0.0.1.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-transport-native-unix-common:4.1.54.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-transport-native-unix-common:linux-x86_64:4.1.54.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-handler-proxy:4.1.54.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-tcnative-boringssl-static:2.0.34.Final" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.netty:netty-codec-socks:4.1.54.Final" level="project" />
   </component>
 </module>

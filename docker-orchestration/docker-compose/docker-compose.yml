@@ -75,6 +75,8 @@ services:
     ports:
       - "8888/tcp"
     depends_on:
+      zipkin:
+        condition: service_healthy
       mysqldb:
         condition: service_healthy
 
@@ -102,8 +104,7 @@ services:
     depends_on:
       eurekaregistry:
         condition: service_healthy
-    environment:
-      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eurekaregistry:8761/eureka
+
 
   apigateway:
     image: anilallewar/basic-api-gateway:0.0.1
@@ -114,8 +115,7 @@ services:
     depends_on:
       eurekaregistry:
         condition: service_healthy
-    environment:
-      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eurekaregistry:8761/eureka
+
 
   webportal:
     image: anilallewar/basic-web-portal:0.0.1
@@ -126,8 +126,7 @@ services:
     depends_on:
       eurekaregistry:
         condition: service_healthy
-    environment:
-      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eurekaregistry:8761/eureka
+
 
   userwebservice:
     image: anilallewar/basic-user-webservice:0.0.1
@@ -138,8 +137,7 @@ services:
     depends_on:
       eurekaregistry:
         condition: service_healthy
-    environment:
-      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eurekaregistry:8761/eureka
+
 
   taskwebservice:
     image: anilallewar/basic-task-webservice:0.0.1
@@ -150,8 +148,7 @@ services:
     depends_on:
       eurekaregistry:
         condition: service_healthy
-    environment:
-      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eurekaregistry:8761/eureka
+
 
   commentswebservice:
     image: anilallewar/basic-comments-webservice:0.0.1
@@ -162,8 +159,7 @@ services:
     depends_on:
       eurekaregistry:
         condition: service_healthy
-    environment:
-      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eurekaregistry:8761/eureka
+
 
 #  zipkinserver:
 #    image: anilallewar/basic-zipkin-server:0.0.1
